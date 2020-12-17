@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Tahoma;
+    margin: 0px;
+}
+.nav {
+    width: calc(100% - 50px);
+    position: relative;
+    padding: 25px 25px 10px 25px;
+    position: fixed;
+    background-color: rgb(0,0,0,0.25);
+    z-index: 9;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+.logo {
+    width: 198px;
+    height: 54px;
+    background-image: url(../source/logo.png);
+    background-size: contain;
+}
+.content {
+    position: relative;
+    top: 140px;
+}
+.menu {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    padding: 0px 25px 0px 0px;
+}
+.menu-item {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 0px 0px 50px;
+}
+.burger {
+    display: none;
+}
+input[type="checkbox"]  {
+    display: none;
+}
+.title{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 30px;
+    margin: 0px 40px 40px 40px;
+    width: 1200px;
+}
+.title h1{
+    margin: 0px;
+}
+.gallery{
+    margin: 0px 30px 40px 40px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 30px;
+    width: 575px;
+    padding: 10px;
+    display: inline-block;
+}
+.screencap{
+    border-radius: 30px;
+    width: 265px;
+    height: 200px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    transition: all 0.2s ease;
+}
+.screencap:hover{
+    box-shadow: 0px 0px 50px rgb(160, 160, 160);
+    transform: scale(1.1);
+}
+.description{
+    margin-left: 0px;
+    margin-right: 40px;
+    text-align: justify;
+    line-height: 2;
+    width: 585px;
+    display: inline-block;
+    position: absolute;
+}
+.description p{
+    margin: 0px;
+}
+.links {
+    align-items: stretch;
+    width: 1280px;
+}
+.links ul {
+    padding: 0px 40px 0px 40px;
+    text-align: center;
+}
+.links ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.links ul li:first-child {
+    margin-left: 0px;
+}
+.links ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.links ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,106 @@
+body {
+    background-color: #000000;
+    margin: 0px;
+}
+
+.nav {
+    width: calc(100% - 50px);
+    padding: 25px;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(0,0,0,0.25);
+    z-index: 9;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.logo {
+    width: 99px;
+    height: 27px;
+    background-image: url(../source/logo.png);
+    background-size: contain;
+}
+
+.burger {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    margin: 20px 25px 0px 0px;
+    background-size: cover;
+    background-image: url(../source/menu.png);
+    
+    cursor: pointer;
+    display: block;
+}
+
+input[type="checkbox"]  {
+    display: none;
+}
+
+input + .burger + div {
+    display: none;
+}
+
+input:checked + .burger + div {
+    display: block;
+}
+.content {
+    position: relative;
+    top: 50px;
+}
+.menu {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    padding: 10px 10px 10px 0px;
+    display: none;
+    background-color: #212121;
+}
+
+.menu-item {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px 20px 10px 20px;
+}
+
+.show {
+    margin: 50px;
+    width: 300px;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+.show-pic {
+    width: 300px;
+    height: 450px;
+    border-radius: 25px 25px 0px 0px;
+    background-size: cover;
+    background-position: center;
+}
+.show-info {
+    font-family: Tahoma;
+    background-color: rgb(116, 116, 116);
+    width: 300px;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+}
+.show-title {
+    color: lightgray;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.show-description {
+    color:darkgray;
+    font-size: 18px;
+}
+.show:hover {
+    box-shadow: 0px 0px 50px rgb(65, 65, 65);
+    transform: scale(1.05);
+}
+.show a{
+    text-decoration: none;
+}
